@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" type="image/png" href="media/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Artem - Android dev</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #000;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .title {
+      position: absolute;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .get-in-touch {
+      background: #0f1116;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: normal;
+      transition: background 0.3s;
+    }
+
+    .get-in-touch:hover {
+      background: #404040;
+    }
+
+    .profile-pic {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .socials {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-inline-start: 16px;
+      padding-inline-end: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background: #f9fafb;
+      border-radius: 16px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    .socials a {
+      width: 40px;
+      height: 40px;
+      background: #e5e7eb;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #555;
+      font-size: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    .socials a:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="media/avatar.jpeg" alt="Avatar" class="profile-pic">
+    <a class="get-in-touch" href="mailto:me@theartem.dev">get in touch</a>
+  </header>
+
+  <div class="title">
+    <h1>Artem Kalachian</h1>
+    <h2>Android Engineer</h2>
+  </div>
+
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/artem-kalachian" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/Bringoff" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</body>
+
+</html>
