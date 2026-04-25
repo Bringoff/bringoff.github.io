@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #FFF8E7;
+      --text: #2C1810;
+      --accent: #C8782A;
+      --accent-secondary: #8B5E3C;
+      --border: #E8D5B8;
+      --text-on-accent: #FFF8E7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1A1410;
+        --text: #FFF8E7;
+        --accent: #E8A04C;
+        --accent-secondary: #C89060;
+        --border: #4A3828;
+        --text-on-accent: #FFF8E7;
+      }
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 132px;
+      height: auto;
+      display: block;
+    }
+
+    a.email-button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: var(--text-on-accent);
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 20px rgba(44, 24, 16, 0.2);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    a.email-button:hover {
+      transform: translateY(-1px);
+      background: var(--accent-secondary);
+      box-shadow: 0 10px 24px rgba(44, 24, 16, 0.24);
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <img class="logo" src="./binny.svg" alt="Binny logo">
+    <a class="email-button" href="mailto:binny@kalachian.dev">Click here to email us</a>
+  </div>
+</body>
+</html>
